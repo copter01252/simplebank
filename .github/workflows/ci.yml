@@ -1,4 +1,4 @@
-name: ci-test
+name: Go
 
 on:
   push:
@@ -8,36 +8,18 @@ on:
 
 jobs:
 
-  test:
-    name : Test
+  build:
     runs-on: ubuntu-latest
-
-    services:
-      postgres:
-        image: postgres:12
-        env:
-          POSTGRES_USER: root
-          POSTGRES_PASSWORD: secret
-          POSTGRES_DB: simple_bank
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-
     steps:
+    - uses: actions/checkout@v3
 
-    - name: Set up Go 1.x
-      uses: actions/setup-go@v2
+    - name: Set up Go
+      uses: actions/setup-go@v3
       with:
-        go-version: ^1.15
-      id: go
+        go-version: 1.18
 
-    - name: Check out code into the go module directory
-    - uses: actions/checkout@
-    
-    - name: Run migration
-      run: make migrateup
+    - name: Build
+      run: go build -v ./...
 
     - name: Test
-      run: make test
+      run: go test -v ./...
