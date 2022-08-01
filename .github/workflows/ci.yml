@@ -26,8 +26,7 @@ jobs:
           --health-retries 5
 
     steps:
-    - name: Check out code into the go module directory
-    - uses: actions/checkout@2
+    - uses: actions/checkout@3
 
     - name: Set up Go 1.x
       uses: actions/setup-go@v2
