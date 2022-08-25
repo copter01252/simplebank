@@ -37,20 +37,6 @@ func NewPayload(username string, duration time.Duration) (*Payload, error) {
 	return payload, nil
 }
 
-// func (payload *Payload) NewPayload(username string, duration time.Duration) (*Payload, error) {
-// 	tokenID, err := uuid.NewUUID()
-// 	if err != nil {
-// 		return nil, err
-// 	}
-
-// 	return &Payload{
-// 		ID:        tokenID,
-// 		Username:  username,
-// 		IssuedAt:  time.Now(),
-// 		ExpiredAt: time.Now().Add(duration),
-// 	}, nil
-// }
-
 // Valid check if the token payload is valid or not
 func (payload *Payload) Valid() error {
 	if time.Now().After(payload.ExpiredAt) {
