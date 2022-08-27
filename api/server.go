@@ -3,12 +3,12 @@ package api
 import (
 	"fmt"
 
+	db "github.com/copter01252/simplebank/db/sqlc"
+	"github.com/copter01252/simplebank/token"
+	"github.com/copter01252/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
-	db "github.com/techscholl/simplebank/db/sqlc"
-	"github.com/techscholl/simplebank/token"
-	"github.com/techscholl/simplebank/util"
 )
 
 // Server serve HTTP requests for our banking service.

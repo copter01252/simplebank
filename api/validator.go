@@ -1,8 +1,8 @@
 package api
 
 import (
+	"github.com/copter01252/simplebank/util"
 	"github.com/go-playground/validator/v10"
-	"github.com/techscholl/simplebank/util"
 )
 
 var validCurrency validator.Func = func(fidleLevel validator.FieldLevel) bool {

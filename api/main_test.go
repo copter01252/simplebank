@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	db "github.com/copter01252/simplebank/db/sqlc"
+	"github.com/copter01252/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
-	db "github.com/techscholl/simplebank/db/sqlc"
-	"github.com/techscholl/simplebank/util"
 )
 
 func newTestServer(t *testing.T, store db.Store) *Server {

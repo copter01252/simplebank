@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
+	mockdb "github.com/copter01252/simplebank/db/mock"
+	db "github.com/copter01252/simplebank/db/sqlc"
+	"github.com/copter01252/simplebank/token"
+	"github.com/copter01252/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
-	mockdb "github.com/techscholl/simplebank/db/mock"
-	db "github.com/techscholl/simplebank/db/sqlc"
-	"github.com/techscholl/simplebank/token"
-	"github.com/techscholl/simplebank/util"
 )
 
 func TestTransferAPI(t *testing.T) {

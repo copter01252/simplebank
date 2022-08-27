@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/copter01252/simplebank/token"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
-	"github.com/techscholl/simplebank/token"
 )
 
 func addAuthorization(t *testing.T, request *http.Request, tokenMaker token.Maker, authorizationType string, username string, duration time.Duration) {
