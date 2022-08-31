@@ -28,6 +28,9 @@ test:
 server:
 	go run main.go
 
+migrateupaws:
+	migrate -path db/migration -database "postgresql://root:secret1234@simple-bank.c5bb8jcrz2ff.ap-southeast-1.rds.amazonaws.com:5432/simple_bank" -verbose up
+
 mock:
 	mockgen -package mockdb -destination db/mock/store.go github.com/copter01252/simplebank/db/sqlc Store
 
