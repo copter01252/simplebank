@@ -1,0 +1,39 @@
+2022-09-05T08:10:42.183Z
+Error: ENOENT: no such file or directory, stat '/Users/copter/dev/learnning/go/simplebank/doc/db.dbml'
+    at Object.statSync (fs.js:1127:3)
+    at validateFilePlugin (/usr/local/lib/node_modules/@dbml/cli/lib/cli/validatePlugins/validatePlugins.js:13:28)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:31
+    at Array.every (<anonymous>)
+    at validateInputFilePaths (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:16)
+    at exportHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/export.js:33:39)
+    at Object.dbml2sql (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+
+2022-09-05T08:11:32.642Z
+Error: ENOENT: no such file or directory, stat '/Users/copter/dev/learnning/go/simplebank/doc/db.dbml'
+    at Object.statSync (fs.js:1127:3)
+    at validateFilePlugin (/usr/local/lib/node_modules/@dbml/cli/lib/cli/validatePlugins/validatePlugins.js:13:28)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:31
+    at Array.every (<anonymous>)
+    at validateInputFilePaths (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:16)
+    at exportHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/export.js:33:39)
+    at Object.dbml2sql (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+
+2022-09-05T08:11:43.419Z
+Error: ENOENT: no such file or directory, stat '/Users/copter/dev/learnning/go/simplebank/doc/db.dbml'
+    at Object.statSync (fs.js:1127:3)
+    at validateFilePlugin (/usr/local/lib/node_modules/@dbml/cli/lib/cli/validatePlugins/validatePlugins.js:13:28)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:31
+    at Array.every (<anonymous>)
+    at validateInputFilePaths (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:28:16)
+    at exportHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/export.js:33:39)
+    at Object.dbml2sql (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+
